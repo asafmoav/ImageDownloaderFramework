@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="24127" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24063"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SampleApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hvT-NP-S7V" customClass="BestAsyncImageView" customModule="ImageDownloaderFramework">
+                                <rect key="frame" x="177" y="78" width="200" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="7T5-ZV-gfJ"/>
+                                    <constraint firstAttribute="height" constant="300" id="F0S-1E-v8y"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BAE-b1-bTH" customClass="BestAsyncImageView" customModule="ImageDownloaderFramework">
+                                <rect key="frame" x="16" y="456" width="178" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="178" id="o7Q-6l-ePp"/>
+                                    <constraint firstAttribute="height" constant="300" id="zxv-Fb-Mo8"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XNj-2b-GZ3">
+                                <rect key="frame" x="35" y="392" width="323" height="40"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="1ej-33-YmX"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="groupTableViewBackgroundColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Load"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1Fp-zX-Vjz"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zCs-gJ-2eF" customClass="BestAsyncImageView" customModule="ImageDownloaderFramework">
+                                <rect key="frame" x="199" y="456" width="178" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="178" id="C8v-yE-A1V"/>
+                                    <constraint firstAttribute="height" constant="300" id="eAD-Nj-mql"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="zCs-gJ-2eF" firstAttribute="top" secondItem="XNj-2b-GZ3" secondAttribute="bottom" constant="24" id="7Nb-aH-kNz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hvT-NP-S7V" secondAttribute="trailing" constant="16" id="9UD-PN-cKk"/>
+                            <constraint firstItem="hvT-NP-S7V" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="78" id="RJL-le-uwW"/>
+                            <constraint firstItem="XNj-2b-GZ3" firstAttribute="top" secondItem="hvT-NP-S7V" secondAttribute="bottom" constant="14" id="Zoz-1f-0TC"/>
+                            <constraint firstItem="XNj-2b-GZ3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bJR-2T-APY"/>
+                            <constraint firstItem="zCs-gJ-2eF" firstAttribute="leading" secondItem="BAE-b1-bTH" secondAttribute="trailing" constant="5" id="eRg-8I-NEK"/>
+                            <constraint firstAttribute="trailing" secondItem="zCs-gJ-2eF" secondAttribute="trailing" constant="16" id="fS3-pL-Efo"/>
+                            <constraint firstItem="BAE-b1-bTH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="mCS-ow-GM3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XNj-2b-GZ3" secondAttribute="trailing" constant="35" id="mxA-ce-e9Y"/>
+                            <constraint firstItem="zCs-gJ-2eF" firstAttribute="centerY" secondItem="BAE-b1-bTH" secondAttribute="centerY" id="pqK-PB-kfK"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="hvT-NP-S7V" id="slI-ZP-N0S"/>
+                        <outlet property="imageView2" destination="BAE-b1-bTH" id="0sb-Xk-xfH"/>
+                        <outlet property="imageView3" destination="zCs-gJ-2eF" id="cR0-aG-ncO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139.69465648854961" y="136.61971830985917"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="groupTableViewBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
