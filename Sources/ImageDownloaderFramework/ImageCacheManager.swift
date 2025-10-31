@@ -7,7 +7,7 @@
 import Foundation
 import UIKit
 
-internal class ImageCacheManager {
+internal actor ImageCacheManager {
     
     static let shared = ImageCacheManager()
     private let cache: NSCache<NSURL, UIImage>

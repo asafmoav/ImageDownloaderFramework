@@ -22,8 +22,9 @@ let package = Package(
         ),
         .testTarget(
             name: "ImageDownloaderFrameworkTests",
-            dependencies: ["ImageDownloaderFramework"],
-            path: "Tests/ImageDownloaderFrameworkTests"
+                       dependencies: ["ImageDownloaderFramework"],
+                       path: "Tests",
+                       resources: [.process("Assets.xcassets")]
         ),
     ]
 )
