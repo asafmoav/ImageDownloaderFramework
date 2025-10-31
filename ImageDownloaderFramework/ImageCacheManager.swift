@@ -13,9 +13,9 @@ public struct BestImageCacheHelper {
     }
 }
 
-class ImageCacheManager {
+internal class ImageCacheManager {
     
-    public static let shared = ImageCacheManager()
+    static let shared = ImageCacheManager()
     private let cache: NSCache<NSURL, UIImage>
         
     private init() { self.cache = NSCache()}
@@ -24,14 +24,24 @@ class ImageCacheManager {
         if let image = cache.object(forKey: url as NSURL) {
             return image
         }
-        
-        let (data,_) = try await URLSession.shared.data(from: url)
-        guard let image = UIImage(data: data) else {
-            //TODO: error handling
-            throw NSError(domain: "ImageDecodingError", code: 0, userInfo: nil)
+        do {
+            let (data,_) = try await URLSession.shared.data(from: url)
+            guard let image = UIImage(data: data) else {
+                throw BestError.decoding
+            }
+            cache.setObject(image, forKey: url as NSURL)
+            return image
+        } catch {
+            if let error = error as? BestError {
+                throw error
+            } else {
+                throw BestError.dataLoading(description: error.localizedDescription)
+            }
         }
-        cache.setObject(image, forKey: url as NSURL)
-        return image
+    }
+    
+    func contains(_ url: URL) -> Bool {
+        cache.object(forKey: url as NSURL) != nil
     }
     
     func invalidateAll() {

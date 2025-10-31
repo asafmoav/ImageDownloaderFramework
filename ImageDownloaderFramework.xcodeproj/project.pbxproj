@@ -25,6 +25,23 @@
 		B4F4ADA32EB3F1C90038AF10 /* ImageDownloaderFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImageDownloaderFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		B4AE611A2EB4DD0B00D70B88 /* Exceptions for "ImageDownloaderFrameworkTests" folder in "ImageDownloaderFramework" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Assets.xcassets,
+			);
+			target = B4F4AD992EB3F1C90038AF10 /* ImageDownloaderFramework */;
+		};
+		B4AE611B2EB4DD0B00D70B88 /* Exceptions for "ImageDownloaderFrameworkTests" folder in "ImageDownloaderFrameworkTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Assets.xcassets,
+			);
+			target = B4F4ADA22EB3F1C90038AF10 /* ImageDownloaderFrameworkTests */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		B4F4AD9C2EB3F1C90038AF10 /* ImageDownloaderFramework */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
@@ -33,6 +50,10 @@
 		};
 		B4F4ADA72EB3F1C90038AF10 /* ImageDownloaderFrameworkTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				B4AE611A2EB4DD0B00D70B88 /* Exceptions for "ImageDownloaderFrameworkTests" folder in "ImageDownloaderFramework" target */,
+				B4AE611B2EB4DD0B00D70B88 /* Exceptions for "ImageDownloaderFrameworkTests" folder in "ImageDownloaderFrameworkTests" target */,
+			);
 			path = ImageDownloaderFrameworkTests;
 			sourceTree = "<group>";
 		};

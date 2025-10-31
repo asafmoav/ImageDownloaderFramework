@@ -15,7 +15,6 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
         imageView.load(url: URL(string: Constants.imageURL1)!, placeholder: UIImage(named: Constants.placeholderName1))
     }
 

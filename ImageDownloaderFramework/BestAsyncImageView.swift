@@ -26,7 +26,7 @@ public final class BestAsyncImageView: UIImageView {
                 }
             } catch {
                 //TODO: error handling
-                // Optionally add logging or delegate error callback
+                print((error as? BestError)?.description ?? "Unknown Error")
             }
         }
     }
