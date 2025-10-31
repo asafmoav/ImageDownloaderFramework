@@ -7,3 +7,5 @@ SampleApp/SampleApp.xcodeproj/project.xcworkspace/xcuserdata/asafmoav.xcuserdata
 SampleApp/SampleApp.xcodeproj/xcuserdata/asafmoav.xcuserdatad/xcschemes/xcschememanagement.plist
 *.xcbkptlist
 .DS_Store
+*.xcuserstate
+ImageDownloaderFramework.xcodeproj/xcuserdata/asafmoav.xcuserdatad/xcschemes/xcschememanagement.plist
