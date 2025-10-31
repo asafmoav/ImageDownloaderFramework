@@ -7,12 +7,6 @@
 import Foundation
 import UIKit
 
-public struct BestImageCacheHelper {
-    public static func invalidateAll() {
-        ImageCacheManager.shared.invalidateAll()
-    }
-}
-
 internal class ImageCacheManager {
     
     static let shared = ImageCacheManager()

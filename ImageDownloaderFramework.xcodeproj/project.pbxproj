@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B4CC5A8B2EB5071E001AD03B /* BestAsyncImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CC5A5D2EB505CA001AD03B /* BestAsyncImageView.swift */; };
+		B4CC5A8C2EB50725001AD03B /* BestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CC5A5E2EB505CA001AD03B /* BestError.swift */; };
+		B4CC5A8D2EB5072B001AD03B /* ImageCacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CC5A5F2EB505CA001AD03B /* ImageCacheManager.swift */; };
+		B4CC5A8F2EB5079C001AD03B /* BestImageCacheHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CC5A8E2EB50798001AD03B /* BestImageCacheHelper.swift */; };
 		B4F4ADA42EB3F1C90038AF10 /* ImageDownloaderFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4F4AD9A2EB3F1C90038AF10 /* ImageDownloaderFramework.framework */; };
 /* End PBXBuildFile section */
 
@@ -21,6 +25,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B4CC5A5D2EB505CA001AD03B /* BestAsyncImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestAsyncImageView.swift; sourceTree = "<group>"; };
+		B4CC5A5E2EB505CA001AD03B /* BestError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestError.swift; sourceTree = "<group>"; };
+		B4CC5A5F2EB505CA001AD03B /* ImageCacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCacheManager.swift; sourceTree = "<group>"; };
+		B4CC5A872EB506AF001AD03B /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		B4CC5A8E2EB50798001AD03B /* BestImageCacheHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestImageCacheHelper.swift; sourceTree = "<group>"; };
 		B4F4AD9A2EB3F1C90038AF10 /* ImageDownloaderFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ImageDownloaderFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4F4ADA32EB3F1C90038AF10 /* ImageDownloaderFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImageDownloaderFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -43,11 +52,6 @@
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		B4F4AD9C2EB3F1C90038AF10 /* ImageDownloaderFramework */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = ImageDownloaderFramework;
-			sourceTree = "<group>";
-		};
 		B4F4ADA72EB3F1C90038AF10 /* ImageDownloaderFrameworkTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
@@ -78,12 +82,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B4CC5A602EB505CA001AD03B /* ImageDownloaderFramework */ = {
+			isa = PBXGroup;
+			children = (
+				B4CC5A8E2EB50798001AD03B /* BestImageCacheHelper.swift */,
+				B4CC5A5D2EB505CA001AD03B /* BestAsyncImageView.swift */,
+				B4CC5A5E2EB505CA001AD03B /* BestError.swift */,
+				B4CC5A5F2EB505CA001AD03B /* ImageCacheManager.swift */,
+			);
+			path = ImageDownloaderFramework;
+			sourceTree = "<group>";
+		};
+		B4CC5A612EB505CA001AD03B /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				B4CC5A602EB505CA001AD03B /* ImageDownloaderFramework */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		B4CC5A862EB506AF001AD03B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B4CC5A872EB506AF001AD03B /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B4F4AD902EB3F1C90038AF10 = {
 			isa = PBXGroup;
 			children = (
-				B4F4AD9C2EB3F1C90038AF10 /* ImageDownloaderFramework */,
 				B4F4ADA72EB3F1C90038AF10 /* ImageDownloaderFrameworkTests */,
 				B4F4AD9B2EB3F1C90038AF10 /* Products */,
+				B4CC5A612EB505CA001AD03B /* Sources */,
+				B4CC5A862EB506AF001AD03B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -121,9 +153,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				B4F4AD9C2EB3F1C90038AF10 /* ImageDownloaderFramework */,
 			);
 			name = ImageDownloaderFramework;
 			packageProductDependencies = (
@@ -215,6 +244,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4CC5A8C2EB50725001AD03B /* BestError.swift in Sources */,
+				B4CC5A8B2EB5071E001AD03B /* BestAsyncImageView.swift in Sources */,
+				B4CC5A8F2EB5079C001AD03B /* BestImageCacheHelper.swift in Sources */,
+				B4CC5A8D2EB5072B001AD03B /* ImageCacheManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
