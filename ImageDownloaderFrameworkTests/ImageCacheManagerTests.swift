@@ -64,34 +64,39 @@ final class ImageCacheManagerTests: XCTestCase {
     }
     
     func testLoadImageFromWeb() async {
-        invalidateCache()
+        await invalidateCache()
         let url = URL(string: successUrl)!
-        XCTAssertFalse(ImageCacheManager.shared.contains(url))
+        let cached = await ImageCacheManager.shared.contains(url)
+        XCTAssertFalse(cached)
         let image = try? await ImageCacheManager.shared.load(from: url)
         XCTAssertNotNil(image)
     }
     
     func testLoadImageFromCache() async {
-        invalidateCache()
+        await invalidateCache()
         let url = URL(string: successUrl)!
-        XCTAssertFalse(ImageCacheManager.shared.contains(url))
+        let cached = await ImageCacheManager.shared.contains(url)
+        XCTAssertFalse(cached)
         let image = try? await ImageCacheManager.shared.load(from: url)
         XCTAssertNotNil(image)
         
     }
     
     func testInvalidateCache() async {
-        invalidateCache()
+        await invalidateCache()
         let url = URL(string: successUrl)!
-        XCTAssertFalse(ImageCacheManager.shared.contains(url))
+        let notCached = await ImageCacheManager.shared.contains(url)
+        XCTAssertFalse(notCached)
         let image = try? await ImageCacheManager.shared.load(from: url)
         XCTAssertNotNil(image)
-        XCTAssertTrue(ImageCacheManager.shared.contains(url))
-        ImageCacheManager.shared.invalidateAll()
-        XCTAssertFalse(ImageCacheManager.shared.contains(url))
+        let isCached = await ImageCacheManager.shared.contains(url)
+        XCTAssertTrue(isCached)
+        await ImageCacheManager.shared.invalidateAll()
+        let notCachedAgain = await ImageCacheManager.shared.contains(url)
+        XCTAssertFalse(notCachedAgain)
     }
     
-    private func invalidateCache() {
-        ImageCacheManager.shared.invalidateAll()
+    private func invalidateCache() async {
+        await BestImageCacheHelper.invalidateAll()
     }
 }

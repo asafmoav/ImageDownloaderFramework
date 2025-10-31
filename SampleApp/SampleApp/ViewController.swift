@@ -24,7 +24,9 @@ class ViewController: UIViewController {
     }
     
     @IBAction func invalidateTapped(_ sender: Any) {
-        BestImageCacheHelper.invalidateAll()
+        Task {
+            await BestImageCacheHelper.invalidateAll()
+        }
     }
     
 }

@@ -6,9 +6,7 @@
 //
 
 public struct BestImageCacheHelper {
-    public static func invalidateAll() {
-        Task {
-            await ImageCacheManager.shared.invalidateAll()
-        }
+    public static func invalidateAll() async {
+        await ImageCacheManager.shared.invalidateAll()
     }
 }
