@@ -51,19 +51,37 @@
                                     <constraint firstAttribute="height" constant="300" id="eAD-Nj-mql"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IfW-Rg-ZLX">
+                                <rect key="frame" x="26" y="136" width="122" height="122"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="122" id="0bt-OH-mkb"/>
+                                    <constraint firstAttribute="width" constant="122" id="CIK-3z-YBk"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="groupTableViewBackgroundColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Invalidate"/>
+                                <connections>
+                                    <action selector="invalidateTapped:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="jks-pA-QrN"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="zCs-gJ-2eF" firstAttribute="top" secondItem="XNj-2b-GZ3" secondAttribute="bottom" constant="24" id="7Nb-aH-kNz"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hvT-NP-S7V" secondAttribute="trailing" constant="16" id="9UD-PN-cKk"/>
+                            <constraint firstItem="hvT-NP-S7V" firstAttribute="leading" secondItem="IfW-Rg-ZLX" secondAttribute="trailing" constant="29" id="B9f-o4-Sij"/>
                             <constraint firstItem="hvT-NP-S7V" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="78" id="RJL-le-uwW"/>
+                            <constraint firstItem="XNj-2b-GZ3" firstAttribute="top" secondItem="IfW-Rg-ZLX" secondAttribute="bottom" constant="134" id="SAc-NV-ATT"/>
+                            <constraint firstItem="IfW-Rg-ZLX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="26" id="UbL-ZF-9Q8"/>
                             <constraint firstItem="XNj-2b-GZ3" firstAttribute="top" secondItem="hvT-NP-S7V" secondAttribute="bottom" constant="14" id="Zoz-1f-0TC"/>
                             <constraint firstItem="XNj-2b-GZ3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bJR-2T-APY"/>
                             <constraint firstItem="zCs-gJ-2eF" firstAttribute="leading" secondItem="BAE-b1-bTH" secondAttribute="trailing" constant="5" id="eRg-8I-NEK"/>
                             <constraint firstAttribute="trailing" secondItem="zCs-gJ-2eF" secondAttribute="trailing" constant="16" id="fS3-pL-Efo"/>
                             <constraint firstItem="BAE-b1-bTH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="mCS-ow-GM3"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XNj-2b-GZ3" secondAttribute="trailing" constant="35" id="mxA-ce-e9Y"/>
+                            <constraint firstItem="IfW-Rg-ZLX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="18" id="obR-h6-xRB"/>
                             <constraint firstItem="zCs-gJ-2eF" firstAttribute="centerY" secondItem="BAE-b1-bTH" secondAttribute="centerY" id="pqK-PB-kfK"/>
                         </constraints>
                     </view>
@@ -83,7 +101,7 @@
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="groupTableViewBackgroundColor">
-            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
