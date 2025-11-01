@@ -9,3 +9,5 @@ SampleApp/SampleApp.xcodeproj/xcuserdata/asafmoav.xcuserdatad/xcschemes/xcscheme
 .DS_Store
 *.xcuserstate
 ImageDownloaderFramework.xcodeproj/xcuserdata/asafmoav.xcuserdatad/xcschemes/xcschememanagement.plist
+.swiftpm/xcode/xcuserdata/asafmoav.xcuserdatad/xcschemes/xcschememanagement.plist
+SampleAppSwiftUI/SampleAppSwiftUI/SampleAppSwiftUI.xcodeproj/xcuserdata/asafmoav.xcuserdatad/xcschemes/xcschememanagement.plist
