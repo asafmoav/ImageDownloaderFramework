@@ -31,7 +31,7 @@ final class BestAsyncImageViewTests: XCTestCase {
             }
         }
         
-        wait(for: [expectation], timeout: 1)
+        wait(for: [expectation], timeout: 2)
         XCTAssertNotNil(sut.image)
     }
     

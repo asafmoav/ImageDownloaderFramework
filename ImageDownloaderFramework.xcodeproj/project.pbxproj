@@ -12,6 +12,9 @@
 		B4CC5A8D2EB5072B001AD03B /* ImageCacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CC5A5F2EB505CA001AD03B /* ImageCacheManager.swift */; };
 		B4CC5A8F2EB5079C001AD03B /* BestImageCacheHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CC5A8E2EB50798001AD03B /* BestImageCacheHelper.swift */; };
 		B4F4ADA42EB3F1C90038AF10 /* ImageDownloaderFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4F4AD9A2EB3F1C90038AF10 /* ImageDownloaderFramework.framework */; };
+		B4F7FFF52EB6046A00F7C6D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4F7FFF02EB6046A00F7C6D7 /* Assets.xcassets */; };
+		B4F7FFF62EB6046A00F7C6D7 /* ImageCacheManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F7FFF22EB6046A00F7C6D7 /* ImageCacheManagerTests.swift */; };
+		B4F7FFF72EB6046A00F7C6D7 /* BestAsyncImageViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F7FFF12EB6046A00F7C6D7 /* BestAsyncImageViewTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,36 +35,10 @@
 		B4CC5A8E2EB50798001AD03B /* BestImageCacheHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestImageCacheHelper.swift; sourceTree = "<group>"; };
 		B4F4AD9A2EB3F1C90038AF10 /* ImageDownloaderFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ImageDownloaderFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4F4ADA32EB3F1C90038AF10 /* ImageDownloaderFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImageDownloaderFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4F7FFF02EB6046A00F7C6D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B4F7FFF12EB6046A00F7C6D7 /* BestAsyncImageViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestAsyncImageViewTests.swift; sourceTree = "<group>"; };
+		B4F7FFF22EB6046A00F7C6D7 /* ImageCacheManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCacheManagerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		B4AE611A2EB4DD0B00D70B88 /* Exceptions for "ImageDownloaderFrameworkTests" folder in "ImageDownloaderFramework" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Assets.xcassets,
-			);
-			target = B4F4AD992EB3F1C90038AF10 /* ImageDownloaderFramework */;
-		};
-		B4AE611B2EB4DD0B00D70B88 /* Exceptions for "ImageDownloaderFrameworkTests" folder in "ImageDownloaderFrameworkTests" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Assets.xcassets,
-			);
-			target = B4F4ADA22EB3F1C90038AF10 /* ImageDownloaderFrameworkTests */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		B4F4ADA72EB3F1C90038AF10 /* ImageDownloaderFrameworkTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				B4AE611A2EB4DD0B00D70B88 /* Exceptions for "ImageDownloaderFrameworkTests" folder in "ImageDownloaderFramework" target */,
-				B4AE611B2EB4DD0B00D70B88 /* Exceptions for "ImageDownloaderFrameworkTests" folder in "ImageDownloaderFrameworkTests" target */,
-			);
-			path = ImageDownloaderFrameworkTests;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		B4F4AD972EB3F1C90038AF10 /* Frameworks */ = {
@@ -112,7 +89,7 @@
 		B4F4AD902EB3F1C90038AF10 = {
 			isa = PBXGroup;
 			children = (
-				B4F4ADA72EB3F1C90038AF10 /* ImageDownloaderFrameworkTests */,
+				B4F7FFF42EB6046A00F7C6D7 /* Tests */,
 				B4F4AD9B2EB3F1C90038AF10 /* Products */,
 				B4CC5A612EB505CA001AD03B /* Sources */,
 				B4CC5A862EB506AF001AD03B /* Frameworks */,
@@ -126,6 +103,24 @@
 				B4F4ADA32EB3F1C90038AF10 /* ImageDownloaderFrameworkTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		B4F7FFF32EB6046A00F7C6D7 /* ImageDownloaderFrameworkTests */ = {
+			isa = PBXGroup;
+			children = (
+				B4F7FFF02EB6046A00F7C6D7 /* Assets.xcassets */,
+				B4F7FFF12EB6046A00F7C6D7 /* BestAsyncImageViewTests.swift */,
+				B4F7FFF22EB6046A00F7C6D7 /* ImageCacheManagerTests.swift */,
+			);
+			path = ImageDownloaderFrameworkTests;
+			sourceTree = "<group>";
+		};
+		B4F7FFF42EB6046A00F7C6D7 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				B4F7FFF32EB6046A00F7C6D7 /* ImageDownloaderFrameworkTests */,
+			);
+			path = Tests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -173,9 +168,6 @@
 			);
 			dependencies = (
 				B4F4ADA62EB3F1C90038AF10 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				B4F4ADA72EB3F1C90038AF10 /* ImageDownloaderFrameworkTests */,
 			);
 			name = ImageDownloaderFrameworkTests;
 			packageProductDependencies = (
@@ -234,6 +226,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4F7FFF52EB6046A00F7C6D7 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,6 +248,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4F7FFF62EB6046A00F7C6D7 /* ImageCacheManagerTests.swift in Sources */,
+				B4F7FFF72EB6046A00F7C6D7 /* BestAsyncImageViewTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
