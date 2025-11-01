@@ -6,7 +6,6 @@
 //
 
 import UIKit
-///UIKit implementation
 public final class BestAsyncImageView: UIImageView {
 
     private var currentTask: Task<Void, Never>?
