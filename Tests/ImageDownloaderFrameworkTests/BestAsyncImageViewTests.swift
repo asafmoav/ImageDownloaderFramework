@@ -8,13 +8,12 @@
 import XCTest
 
 @testable import ImageDownloaderFramework
-
+@MainActor
 final class BestAsyncImageViewTests: XCTestCase {
     
-    let placeholderImage = UIImage(named: "placeholder")
-    let errorUrl = "https://fastly.pisum.photos/id/1005/200/300.jpg?hmac=ZygrmRTuNYz9HivXcWqFGXDRVJxIHzaS-8MA0I3NKBw"
-    let successUrl = "https://fastly.picsum.photos/id/1005/200/300.jpg?hmac=ZygrmRTuNYz9HivXcWqFGXDRVJxIHzaS-8MA0I3NKBw"
-    
+    let placeholderImage = UIImage(systemName: "photo")
+    let errorUrl = "https://pic-sum.photos/300"
+    let successUrl = "https://picsum.photos/300"
     
     
     func testImageLoadingSuccess() {
@@ -25,13 +24,13 @@ final class BestAsyncImageViewTests: XCTestCase {
         
         sut.load(url: url)
         
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
             if sut.image != nil {
                 expectation.fulfill()
             }
         }
         
-        wait(for: [expectation], timeout: 2)
+        wait(for: [expectation], timeout: 5)
         XCTAssertNotNil(sut.image)
     }
     
@@ -42,7 +41,5 @@ final class BestAsyncImageViewTests: XCTestCase {
         sut.load(url: url, placeholder: placeholderImage)
         XCTAssert(sut.image == placeholderImage)
     }
-    
-    
 }
 
