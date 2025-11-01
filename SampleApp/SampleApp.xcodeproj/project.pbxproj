@@ -7,27 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B4F4AE132EB407E70038AF10 /* ImageDownloaderFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4F4AE122EB407E70038AF10 /* ImageDownloaderFramework.framework */; };
-		B4F4AE142EB407E70038AF10 /* ImageDownloaderFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B4F4AE122EB407E70038AF10 /* ImageDownloaderFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B4F700D12EB689C700F7C6D7 /* ImageDownloaderFramework in Frameworks */ = {isa = PBXBuildFile; productRef = B4F700D02EB689C700F7C6D7 /* ImageDownloaderFramework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		B4F4AE152EB407E70038AF10 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				B4F4AE142EB407E70038AF10 /* ImageDownloaderFramework.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		B4F4ADE92EB407880038AF10 /* SampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		B4F4AE122EB407E70038AF10 /* ImageDownloaderFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ImageDownloaderFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -56,7 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B4F4AE132EB407E70038AF10 /* ImageDownloaderFramework.framework in Frameworks */,
+				B4F700D12EB689C700F7C6D7 /* ImageDownloaderFramework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,7 +67,6 @@
 		B4F4AE112EB407E70038AF10 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B4F4AE122EB407E70038AF10 /* ImageDownloaderFramework.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -98,7 +81,6 @@
 				B4F4ADE52EB407880038AF10 /* Sources */,
 				B4F4ADE62EB407880038AF10 /* Frameworks */,
 				B4F4ADE72EB407880038AF10 /* Resources */,
-				B4F4AE152EB407E70038AF10 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -109,6 +91,7 @@
 			);
 			name = SampleApp;
 			packageProductDependencies = (
+				B4F700D02EB689C700F7C6D7 /* ImageDownloaderFramework */,
 			);
 			productName = SampleApp;
 			productReference = B4F4ADE92EB407880038AF10 /* SampleApp.app */;
@@ -138,6 +121,9 @@
 			);
 			mainGroup = B4F4ADE02EB407880038AF10;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				B4F700CF2EB689C700F7C6D7 /* XCLocalSwiftPackageReference "../../ImageDownloaderFramework" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = B4F4ADEA2EB407880038AF10 /* Products */;
 			projectDirPath = "";
@@ -376,6 +362,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		B4F700CF2EB689C700F7C6D7 /* XCLocalSwiftPackageReference "../../ImageDownloaderFramework" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../../ImageDownloaderFramework;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B4F700D02EB689C700F7C6D7 /* ImageDownloaderFramework */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ImageDownloaderFramework;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B4F4ADE12EB407880038AF10 /* Project object */;
 }
